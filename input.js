@@ -1,3 +1,5 @@
+const { w, a, s, d } = require('./constants');
+
 let connection;
 
 
@@ -20,20 +22,20 @@ const setupInput = function (conn) {
       case '\u0003':
       process.exit();
       case 'w':
-      console.log("Move: up");
-      connection.write("Move: up");
+      console.log(w);
+      connection.write(w);
       break;
       case 'a':
-      console.log("Move: left");
-      connection.write("Move: left");
+      console.log(a);
+      connection.write(a);
       break;
       case 's':
-      console.log("Move: down");
-      connection.write("Move: down");
+      console.log(s);
+      connection.write(s);
       break;
       case 'd':
-      console.log("Move: right");
-      connection.write("Move: right");
+      console.log(d);
+      connection.write(d);
       break;
       case 'f':
       console.log("hello");
