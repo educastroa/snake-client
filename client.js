@@ -15,13 +15,13 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Connected");
     conn.write("Name: : )");
+    // setInterval(() => {
+    //   conn.write("Move: up") 
+    // }, 200); 
   });
-
   conn.on("data", (data) => {
     console.log(data);
   });
-
-
   return conn;
 };
 
