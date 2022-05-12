@@ -35,6 +35,14 @@ const setupInput = function (conn) {
       console.log("Move: right");
       connection.write("Move: right");
       break;
+      case 'f':
+      console.log("hello");
+      connection.write("Say: hello");
+      break;
+      case 'q':
+      console.log("fun!");
+      connection.write("Say: fun"); 
+
 
     }
     
